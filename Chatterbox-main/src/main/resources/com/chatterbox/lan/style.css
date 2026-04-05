@@ -1,0 +1,604 @@
+.app-background {
+    -fx-background-image: url("../../../Image/background.jpg");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.login-input-shell {
+    -fx-alignment: center-left;
+    -fx-padding: 0 12 0 12;
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: white;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+.login-input-icon {
+    -fx-text-fill: white;
+    -fx-icon-color: white;
+    -fx-font-size: 16px;
+}
+
+.login-input-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255,255,255,0.7);
+}
+
+.login-button {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-border-color: white;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-padding: 10;
+}
+
+.accent-spinner {
+    -fx-progress-color: deepskyblue;
+}
+
+.button-spinner {
+    -fx-progress-color: white;
+}
+
+.white-spinner {
+    -fx-progress-color: white;
+}
+
+.loading-overlay {
+    -fx-alignment: center;
+    -fx-padding: 16;
+}
+
+.loading-label {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.loading-label-light {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.create-account-link {
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-underline: true;
+}
+
+.create-account-link:hover {
+    -fx-text-fill: #dbeafe;
+}
+
+.register-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 22;
+}
+
+.edit-details-form {
+    -fx-padding: 10;
+    -fx-max-width: 390px;
+}
+
+.edit-details-form .register-field-label {
+    -fx-font-size: 11px;
+}
+
+.edit-details-form .register-input-field {
+    -fx-min-width: 0;
+    -fx-pref-width: 230px;
+    -fx-max-width: 1.7976931348623157E308;
+    -fx-padding: 6 8 6 8;
+}
+
+.edit-details-form .register-secondary-button {
+    -fx-padding: 6 8 6 8;
+}
+
+.edit-details-form .register-primary-button {
+    -fx-padding: 7 10 7 10;
+    -fx-font-size: 12px;
+}
+
+.register-field-label {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-min-width: 110px;
+    -fx-pref-width: 110px;
+}
+
+.register-input-field {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 8;
+    -fx-border-color: transparent;
+    -fx-padding: 10 12 10 12;
+    -fx-pref-width: 380px;
+}
+
+.register-primary-button {
+    -fx-background-color: deepskyblue;
+    -fx-border-color: deepskyblue;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.register-secondary-button {
+    -fx-background-color: deepskyblue;
+    -fx-border-color: deepskyblue;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 12 10 12;
+}
+
+.register-back-link {
+    -fx-text-fill: deepskyblue;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-underline: true;
+}
+
+.register-back-link:hover {
+    -fx-text-fill: #0284c7;
+}
+
+/* 1. Reset the main List View background */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-padding: 10; /* Adds space around the whole list */
+}
+
+/* 2. Fix the Cells (The rows) */
+.list-cell {
+    -fx-background-color: transparent; /* Removes default colors */
+    -fx-border-width: 0;               /* REMOVES WEIRD BORDERS */
+    -fx-padding: 5px;                  /* Space inside each row */
+    -fx-text-fill: black;              /* Default text color */
+}
+
+.list-cell:filled:selected:focused,
+.list-cell:filled:selected {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+    -fx-background-insets: 0; /* Removes the inner focus ring border */
+}
+
+/* 4. Fix that large red/brown block at the bottom (Empty Cells) */
+.list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+/* reset DONE */
+
+
+
+
+.message-box {
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-max-width: 300;
+}
+
+.message-list {
+    -fx-background-color: white;
+
+}
+
+.message-area {
+    -fx-background-color: white;
+}
+
+.chat-header {
+    -fx-padding: 12 14 12 14;
+    -fx-alignment: center-left;
+    -fx-background-color: white;
+}
+
+.chat-header-avatar {
+    -fx-smooth: true;
+}
+
+.avatar-status-container {
+    -fx-alignment: center;
+}
+
+.active-status-dot {
+    -fx-background-color: #22c55e;
+    -fx-background-radius: 999;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-border-radius: 999;
+    -fx-min-width: 10;
+    -fx-min-height: 10;
+    -fx-max-width: 10;
+    -fx-max-height: 10;
+}
+
+.active-status-dot-large {
+    -fx-border-width: 3;
+    -fx-min-width: 16;
+    -fx-min-height: 16;
+    -fx-max-width: 16;
+    -fx-max-height: 16;
+}
+
+.chat-header-title {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.chat-header-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 4;
+}
+
+.chat-header-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.call-notification-banner {
+    -fx-padding: 10 14 10 14;
+    -fx-alignment: center-left;
+    -fx-background-color: #e0f7ff;
+    -fx-border-color: #7dd3fc;
+    -fx-border-width: 0 0 1 0;
+}
+
+.call-notification-text {
+    -fx-text-fill: #0369a1;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.call-end-button {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-background-radius: 16;
+    -fx-padding: 6 14 6 14;
+}
+
+.empty-chat-label {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 18px;
+}
+
+.chat-composer {
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+    -fx-background-color: white;
+}
+
+.chat-input-field {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 18;
+    -fx-border-color: transparent;
+    -fx-padding: 8 14 8 14;
+}
+
+.composer-icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+}
+
+.composer-send-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.composer-file-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.sidebar-icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+}
+
+.sidebar-header {
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+}
+
+.sidebar-menu-button {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-border-color: rgba(255, 255, 255, 0.35);
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 6 8 6 8;
+}
+
+.sidebar-action-icon {
+    -fx-icon-color: white;
+}
+
+.sidebar-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.conversation-list-item {
+    -fx-padding: 8 12;
+    -fx-alignment: center-left;
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+}
+
+.list-cell:filled:hover .conversation-list-item {
+    -fx-background-color: #e0f7ff;
+}
+
+.conversation-list-item:selected {
+    -fx-background-color: deepskyblue;
+}
+
+.list-cell:filled:selected:hover .conversation-list-item {
+    -fx-background-color: deepskyblue;
+}
+
+.conversation-list-name {
+    -fx-font-weight: bold;
+    -fx-text-fill: deepskyblue;
+}
+
+.list-cell:selected .conversation-list-name {
+    -fx-text-fill: white;
+}
+
+.available-user-item {
+    -fx-padding: 6 10;
+    -fx-alignment: center-left;
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+}
+
+.available-user-name {
+    -fx-font-weight: bold;
+    -fx-text-fill: deepskyblue;
+}
+
+.available-user-item:selected {
+    -fx-background-color: deepskyblue;
+}
+
+.available-user-remove {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 0;
+}
+
+.list-cell:selected .available-user-name {
+    -fx-text-fill: white;
+}
+
+.user-list {
+    -fx-background-color: #e0e0e0;
+}
+.side-bar{
+    -fx-background-color: #f0f0f0;
+}
+
+.sidebar-drawer {
+    -fx-background-color: rgba(12, 31, 53, 0.96);
+    -fx-padding: 8 12 12 12;
+    -fx-background-radius: 0 18 18 0;
+    -fx-border-radius: 0 18 18 0;
+    -fx-pref-height: 400;
+}
+
+.drawer-header {
+    -fx-alignment: center-right;
+    -fx-padding: 0 0 2 0;
+}
+
+.drawer-close-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+}
+
+.drawer-button {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-padding: 10 14 10 14;
+    -fx-alignment: center-left;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.drawer-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.22);
+}
+
+.drawer-button-icon {
+    -fx-icon-color: white;
+}
+
+.own-id-caption {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.own-id-username-label {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.own-id-username {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.own-id-avatar {
+    -fx-smooth: true;
+}
+
+.own-id-page {
+    -fx-padding: 0;
+}
+
+.own-id-sidebar {
+    -fx-padding: 10;
+}
+
+.own-id-nav-button {
+    -fx-background-color: white;
+    -fx-text-fill: deepskyblue;
+    -fx-background-radius: 16;
+    -fx-padding: 10 12 10 12;
+    -fx-alignment: center-left;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.own-id-nav-button:hover {
+    -fx-background-color: #e0f7ff;
+}
+
+.own-id-nav-button:selected {
+    -fx-background-color: deepskyblue;
+    -fx-text-fill: white;
+}
+
+.own-id-nav-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.own-id-nav-button:selected .own-id-nav-icon {
+    -fx-icon-color: white;
+}
+
+.own-id-content-card {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-alignment: center;
+}
+
+.own-id-content-body {
+    -fx-padding: 18;
+    -fx-alignment: center;
+}
+
+.own-id-scroll {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+}
+
+.own-id-scroll > .viewport {
+    -fx-background-color: white;
+}
+
+.own-id-placeholder-body {
+    -fx-padding: 22;
+    -fx-background-color: white;
+}
+
+.own-id-placeholder-title {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.own-id-placeholder-text {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 12px;
+}
+
+.own-id-input-field {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 16;
+    -fx-border-color: transparent;
+    -fx-padding: 8 12 8 12;
+    -fx-max-width: 280px;
+}
+
+.own-id-action-button {
+    -fx-background-color: deepskyblue;
+    -fx-text-fill: white;
+    -fx-background-radius: 16;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+}
+
+.own-id-label {
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+    -fx-min-width: 120px;
+}
+
+.own-id-value {
+    -fx-text-fill: black;
+    -fx-font-size: 11px;
+    -fx-font-weight: normal;
+    -fx-alignment: center;
+    -fx-min-width: 120px;
+    -fx-max-width: 120px;
+}
+
+.own-id-username {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+
+.message-me {
+    -fx-background-color: deepskyblue;
+}
+
+.message-other {
+    -fx-background-color: deepskyblue;
+}
+
+.username-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 10px;
+    -fx-text-fill: white;
+}
+
+.message-text {
+    -fx-fill: white;
+    -fx-font-size: 14px;
+}
+
+.message-file-button {
+    -fx-background-color: white;
+    -fx-text-fill: deepskyblue;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 4 10 4 10;
+}
+
+.message-file-name {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
