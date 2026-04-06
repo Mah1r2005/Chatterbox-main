@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="18" prefWidth="800" prefHeight="600" styleClass="app-background" stylesheets="@style.css"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.chatterbox.lan.controllers.RegisterController">
+
+    <padding>
+        <Insets top="32" right="32" bottom="32" left="32"/>
+    </padding>
+
+    <Label text="Create New Account"
+           style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+    <VBox spacing="12" maxWidth="640" prefWidth="640" styleClass="register-card">
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Label text="Profile Photo" styleClass="register-field-label"/>
+            <TextField fx:id="avatarField" editable="false" promptText="Choose a profile photo" styleClass="register-input-field" HBox.hgrow="ALWAYS"/>
+            <Button text="Browse" onAction="#onBrowseAvatar" styleClass="register-secondary-button"/>
+        </HBox>
+
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Label text="User Name" styleClass="register-field-label"/>
+            <TextField fx:id="usernameField" promptText="Username" styleClass="register-input-field" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Label text="First Name" styleClass="register-field-label"/>
+            <TextField fx:id="firstNameField" promptText="First name" styleClass="register-input-field" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Label text="Last Name" styleClass="register-field-label"/>
+            <TextField fx:id="lastNameField" promptText="Last name" styleClass="register-input-field" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Label text="Email" styleClass="register-field-label"/>
+            <TextField fx:id="emailField" promptText="Email address" styleClass="register-input-field" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Label text="Phone Number" styleClass="register-field-label"/>
+            <TextField fx:id="phoneField" promptText="Phone number" styleClass="register-input-field" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Label text="Location" styleClass="register-field-label"/>
+            <TextField fx:id="locationField" promptText="Location" styleClass="register-input-field" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Label text="Password" styleClass="register-field-label"/>
+            <PasswordField fx:id="passwordField" onAction="#onRegister" promptText="Password" styleClass="register-input-field" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <Button fx:id="registerButton"
+                text="Create Account"
+                defaultButton="true"
+                maxWidth="Infinity"
+                onAction="#onRegister"
+                styleClass="register-primary-button"/>
+
+        <HBox alignment="CENTER_LEFT">
+            <Hyperlink text="Back to login"
+                       onAction="#onBackToLogin"
+                       styleClass="register-back-link"/>
+        </HBox>
+
+        <Label fx:id="errorLabel" textFill="red" visible="false"/>
+    </VBox>
+</VBox>

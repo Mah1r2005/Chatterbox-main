@@ -1,0 +1,925 @@
+.app-background {
+    -fx-background-image: url("../../../Image/background.jpg");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.login-input-shell {
+    -fx-alignment: center-left;
+    -fx-padding: 0 12 0 12;
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: white;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+.login-input-icon {
+    -fx-text-fill: white;
+    -fx-icon-color: white;
+    -fx-font-size: 16px;
+}
+
+.login-input-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255,255,255,0.7);
+}
+
+.login-button {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-border-color: white;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-padding: 10;
+}
+
+.create-account-link {
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-underline: true;
+}
+
+.create-account-link:hover {
+    -fx-text-fill: #dbeafe;
+}
+
+.register-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-padding: 22;
+}
+
+.edit-details-form {
+    -fx-padding: 10;
+    -fx-max-width: 390px;
+}
+
+.edit-details-form .register-field-label {
+    -fx-font-size: 11px;
+}
+
+.edit-details-form .register-input-field {
+    -fx-min-width: 0;
+    -fx-pref-width: 230px;
+    -fx-max-width: 1.7976931348623157E308;
+    -fx-padding: 6 8 6 8;
+}
+
+.edit-details-form .register-secondary-button {
+    -fx-padding: 6 8 6 8;
+}
+
+.edit-details-form .register-primary-button {
+    -fx-padding: 7 10 7 10;
+    -fx-font-size: 12px;
+}
+
+.register-field-label {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-min-width: 110px;
+    -fx-pref-width: 110px;
+}
+
+.register-input-field {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 8;
+    -fx-border-color: transparent;
+    -fx-padding: 10 12 10 12;
+    -fx-pref-width: 380px;
+}
+
+.register-primary-button {
+    -fx-background-color: deepskyblue;
+    -fx-border-color: deepskyblue;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.register-secondary-button {
+    -fx-background-color: deepskyblue;
+    -fx-border-color: deepskyblue;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 12 10 12;
+}
+
+.register-back-link {
+    -fx-text-fill: deepskyblue;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-underline: true;
+}
+
+.register-back-link:hover {
+    -fx-text-fill: #0284c7;
+}
+
+/* 1. Reset the main List View background */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-padding: 10; /* Adds space around the whole list */
+}
+
+/* 2. Fix the Cells (The rows) */
+.list-cell {
+    -fx-background-color: transparent; /* Removes default colors */
+    -fx-border-width: 0;               /* REMOVES WEIRD BORDERS */
+    -fx-padding: 5px;                  /* Space inside each row */
+    -fx-text-fill: black;              /* Default text color */
+}
+
+.list-cell:filled:selected:focused,
+.list-cell:filled:selected {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+    -fx-background-insets: 0; /* Removes the inner focus ring border */
+}
+
+/* 4. Fix that large red/brown block at the bottom (Empty Cells) */
+.list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+/* reset DONE */
+
+
+
+
+.message-box {
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-max-width: 300;
+}
+
+.message-list {
+    -fx-background-color: white;
+
+}
+
+.message-list .scroll-bar:vertical {
+    -fx-pref-width: 6px;
+    -fx-background-color: transparent;
+}
+
+.message-list .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-background-radius: 999px;
+}
+
+.message-list .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(14, 165, 233, 0.55);
+    -fx-background-radius: 999px;
+}
+
+.message-list .scroll-bar:vertical .increment-button,
+.message-list .scroll-bar:vertical .decrement-button,
+.message-list .scroll-bar:vertical .increment-arrow,
+.message-list .scroll-bar:vertical .decrement-arrow {
+    -fx-padding: 0;
+    -fx-shape: "";
+    -fx-background-color: transparent;
+}
+
+.message-area {
+    -fx-background-color: white;
+}
+
+.chat-header {
+    -fx-padding: 12 14 12 14;
+    -fx-alignment: center-left;
+    -fx-background-color: white;
+}
+
+.chat-header-avatar {
+    -fx-smooth: true;
+}
+
+.chat-header-title {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.chat-header-status {
+    -fx-text-fill: #38bdf8;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+}
+
+.chat-header-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 4;
+}
+
+.chat-header-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.call-notification-banner {
+    -fx-padding: 10 14 10 14;
+    -fx-alignment: center-left;
+    -fx-background-color: #e0f7ff;
+    -fx-border-color: #7dd3fc;
+    -fx-border-width: 0 0 1 0;
+}
+
+.call-notification-text {
+    -fx-text-fill: #0369a1;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.call-end-button {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-background-radius: 16;
+    -fx-padding: 6 14 6 14;
+}
+
+.empty-chat-label {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 18px;
+}
+
+.loading-overlay {
+    -fx-background-color: transparent;
+}
+
+.loading-label {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.loading-label-light {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.white-spinner {
+    -fx-progress-color: white;
+}
+
+.white-spinner > .indicator,
+.white-spinner > .indicator > .spinner {
+    -fx-background-color: transparent;
+}
+
+.white-spinner:indeterminate .segment {
+    -fx-background-color: white;
+}
+
+.accent-spinner {
+    -fx-progress-color: deepskyblue;
+}
+
+.accent-spinner > .indicator,
+.accent-spinner > .indicator > .spinner {
+    -fx-background-color: transparent;
+}
+
+.accent-spinner:indeterminate .segment {
+    -fx-background-color: deepskyblue;
+}
+
+.button-spinner {
+    -fx-progress-color: white;
+}
+
+.button-spinner > .indicator,
+.button-spinner > .indicator > .spinner {
+    -fx-background-color: transparent;
+}
+
+.button-spinner:indeterminate .segment {
+    -fx-background-color: white;
+}
+
+.chat-composer {
+    -fx-padding: 10;
+    -fx-background-color: white;
+}
+
+.reply-preview-bar {
+    -fx-background-color: #e0f2fe;
+    -fx-background-radius: 12;
+    -fx-padding: 8 10 8 10;
+    -fx-border-color: #7dd3fc;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.reply-preview-sender {
+    -fx-text-fill: #0369a1;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.reply-preview-text {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 12px;
+}
+
+.reply-preview-close {
+    -fx-background-color: transparent;
+    -fx-padding: 4;
+    -fx-cursor: hand;
+}
+
+.reply-preview-close-icon {
+    -fx-icon-color: #0369a1;
+}
+
+.chat-input-field {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 18;
+    -fx-border-color: transparent;
+    -fx-padding: 8 14 8 14;
+    -fx-font-weight: 600;
+}
+
+.composer-icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+}
+
+.composer-send-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.composer-emoji-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.context-menu .emoji-picker-item {
+    -fx-padding: 4;
+    -fx-background-color: white;
+}
+
+.context-menu .emoji-picker-item .label {
+    -fx-text-fill: deepskyblue;
+}
+
+.emoji-picker-row {
+    -fx-alignment: center-left;
+}
+
+.emoji-picker-button {
+    -fx-background-color: transparent;
+    -fx-padding: 6;
+    -fx-cursor: hand;
+    -fx-text-fill: deepskyblue;
+    -fx-border-color: transparent;
+}
+
+.emoji-picker-icon {
+    -fx-icon-color: deepskyblue;
+    -fx-icon-size: 14px;
+}
+
+.context-menu .emoji-picker-button .ikonli-font-icon {
+    -fx-icon-color: deepskyblue;
+    -fx-icon-size: 14px;
+}
+
+.composer-file-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.active-status-dot {
+    -fx-background-color: #22c55e;
+    -fx-border-color: white;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-width: 2px;
+}
+
+.sidebar-icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+}
+
+.sidebar-header {
+    -fx-padding: 10;
+    -fx-alignment: center-left;
+}
+
+.sidebar-menu-button {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-border-color: rgba(255, 255, 255, 0.35);
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 6 8 6 8;
+}
+
+.sidebar-action-icon {
+    -fx-icon-color: white;
+}
+
+.sidebar-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.sidebar-search-shell {
+    -fx-alignment: center-left;
+    -fx-padding: 0 10 8 10;
+}
+
+.sidebar-search-icon {
+    -fx-icon-color: white;
+}
+
+.sidebar-search-field {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 10;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-padding: 8 10 8 10;
+    -fx-font-weight: 600;
+}
+
+.conversation-list-item {
+    -fx-padding: 8 12;
+    -fx-alignment: center-left;
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+}
+
+.list-cell:filled:hover .conversation-list-item {
+    -fx-background-color: #e0f7ff;
+}
+
+.conversation-list-item:selected {
+    -fx-background-color: deepskyblue;
+}
+
+.list-cell:filled:selected:hover .conversation-list-item {
+    -fx-background-color: deepskyblue;
+}
+
+.conversation-list-name {
+    -fx-font-weight: bold;
+    -fx-text-fill: deepskyblue;
+}
+
+.list-cell:selected .conversation-list-name {
+    -fx-text-fill: white;
+}
+
+.available-user-item {
+    -fx-padding: 6 10;
+    -fx-alignment: center-left;
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+}
+
+.available-user-name {
+    -fx-font-weight: bold;
+    -fx-text-fill: deepskyblue;
+}
+
+.available-user-item:selected {
+    -fx-background-color: deepskyblue;
+}
+
+.available-user-remove {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 0;
+}
+
+.list-cell:selected .available-user-name {
+    -fx-text-fill: white;
+}
+
+.user-list {
+    -fx-background-color: #e0e0e0;
+}
+.side-bar{
+    -fx-background-color: #f0f0f0;
+}
+
+.sidebar-drawer {
+    -fx-background-color: rgba(12, 31, 53, 0.96);
+    -fx-padding: 8 12 12 12;
+    -fx-background-radius: 0 18 18 0;
+    -fx-border-radius: 0 18 18 0;
+    -fx-pref-height: 400;
+}
+
+.drawer-header {
+    -fx-alignment: center-right;
+    -fx-padding: 0 0 2 0;
+}
+
+.drawer-close-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+}
+
+.drawer-button {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-padding: 10 14 10 14;
+    -fx-alignment: center-left;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.drawer-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.22);
+}
+
+.drawer-button-icon {
+    -fx-icon-color: white;
+}
+
+.own-id-caption {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.own-id-username-label {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.own-id-username {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.own-id-avatar {
+    -fx-smooth: true;
+}
+
+.own-id-page {
+    -fx-padding: 0;
+}
+
+.own-id-sidebar {
+    -fx-padding: 10;
+}
+
+.own-id-nav-button {
+    -fx-background-color: white;
+    -fx-text-fill: deepskyblue;
+    -fx-background-radius: 16;
+    -fx-padding: 10 12 10 12;
+    -fx-alignment: center-left;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.own-id-nav-button:hover {
+    -fx-background-color: #e0f7ff;
+}
+
+.own-id-nav-button:selected {
+    -fx-background-color: deepskyblue;
+    -fx-text-fill: white;
+}
+
+.own-id-nav-icon {
+    -fx-icon-color: deepskyblue;
+}
+
+.own-id-nav-button:selected .own-id-nav-icon {
+    -fx-icon-color: white;
+}
+
+.own-id-content-card {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-alignment: center;
+}
+
+.own-id-content-body {
+    -fx-padding: 18;
+    -fx-alignment: center;
+}
+
+.own-id-scroll {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+}
+
+.own-id-scroll > .viewport {
+    -fx-background-color: white;
+}
+
+.own-id-placeholder-body {
+    -fx-padding: 22;
+    -fx-background-color: white;
+}
+
+.own-id-placeholder-title {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.own-id-placeholder-text {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 12px;
+}
+
+.own-id-input-field {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 16;
+    -fx-border-color: transparent;
+    -fx-padding: 8 12 8 12;
+    -fx-max-width: 280px;
+}
+
+.own-id-action-button {
+    -fx-background-color: deepskyblue;
+    -fx-text-fill: white;
+    -fx-background-radius: 16;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+}
+
+.own-id-label {
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+    -fx-min-width: 120px;
+}
+
+.own-id-value {
+    -fx-text-fill: black;
+    -fx-font-size: 11px;
+    -fx-font-weight: normal;
+    -fx-alignment: center;
+    -fx-min-width: 120px;
+    -fx-max-width: 120px;
+}
+
+.own-id-value-wide {
+    -fx-min-width: 220px;
+    -fx-pref-width: 220px;
+    -fx-max-width: 220px;
+    -fx-alignment: center-right;
+    -fx-text-alignment: right;
+}
+
+.own-id-group-member-row {
+    -fx-padding: 8 12;
+    -fx-alignment: center-left;
+    -fx-background-color: deepskyblue;
+    -fx-background-radius: 16;
+    -fx-min-width: 220px;
+    -fx-max-width: 220px;
+}
+
+.own-id-group-member-name {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.own-id-group-member-empty {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: deepskyblue;
+    -fx-background-radius: 16;
+    -fx-padding: 8 12;
+}
+
+.own-id-username {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+
+.message-me {
+    -fx-background-color: deepskyblue;
+}
+
+.message-other {
+    -fx-background-color: deepskyblue;
+}
+
+.username-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 10px;
+    -fx-text-fill: white;
+}
+
+.message-text {
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+}
+
+.message-text-flow {
+    -fx-max-width: 300px;
+}
+
+.message-time {
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+    -fx-font-size: 10px;
+    -fx-font-weight: 600;
+}
+
+.message-call-row {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 6 8 6 8;
+}
+
+.message-call-text {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+}
+
+.message-call-details {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+}
+
+.message-deleted-icon {
+    -fx-icon-color: white;
+    -fx-icon-size: 12px;
+}
+
+.message-inline-icon {
+    -fx-icon-color: white;
+    -fx-icon-size: 13px;
+}
+
+.message-reply-box {
+    -fx-background-color: rgba(255, 255, 255, 0.16);
+    -fx-background-radius: 8;
+    -fx-padding: 6 8 6 8;
+    -fx-border-color: rgba(255, 255, 255, 0.35);
+    -fx-border-width: 0 0 0 3;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+}
+
+.message-reply-sender {
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.message-reply-text {
+    -fx-text-fill: rgba(255, 255, 255, 0.92);
+    -fx-font-size: 12px;
+}
+
+.message-reactions {
+    -fx-padding: 2 0 0 0;
+}
+
+.message-reaction-chip {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 999px;
+    -fx-padding: 2 6 2 6;
+    -fx-cursor: hand;
+}
+
+.message-reaction-icon {
+    -fx-icon-color: white;
+    -fx-icon-size: 10px;
+}
+
+.message-reaction-count {
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.tooltip.reaction-tooltip {
+    -fx-background-color: white;
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10;
+    -fx-padding: 6 10 6 10;
+}
+
+.reaction-tooltip-label {
+    -fx-text-fill: deepskyblue;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 0;
+}
+
+.reaction-tooltip-icon {
+    -fx-icon-color: deepskyblue;
+    -fx-icon-size: 12px;
+}
+
+.message-highlighted {
+    -fx-border-color: #facc15;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+}
+
+.message-file-button {
+    -fx-background-color: white;
+    -fx-text-fill: deepskyblue;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 4 10 4 10;
+}
+
+.message-file-name {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+/* Message hover actions */
+.message-actions {
+    -fx-alignment: center;
+}
+
+.message-action-btn {
+    -fx-background-color: rgba(0, 0, 0, 0.35);
+    -fx-text-fill: white;
+    -fx-min-width: 24px;
+    -fx-min-height: 24px;
+    -fx-max-width: 24px;
+    -fx-max-height: 24px;
+    -fx-padding: 0;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+}
+
+.message-action-btn .ikonli-font-icon {
+    -fx-icon-size: 12px;
+    -fx-icon-color: white;
+}
+
+.message-action-btn:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.55);
+}
+
+.message-action-btn:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}
+
+.message-reply-btn:hover {
+    -fx-background-color: rgba(14, 165, 233, 0.8);
+}
+
+.message-react-btn:hover {
+    -fx-background-color: rgba(251, 191, 36, 0.9);
+}
+
+.message-trash-btn:hover {
+    -fx-background-color: rgba(239, 68, 68, 0.85);
+}
+
+/* 2. Deleted Message Styling */
+.message-deleted-box {
+    -fx-background-color: rgba(255, 255, 240, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 1px;
+    -fx-border-style: dashed;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.message-deleted-text {
+    -fx-text-fill: black;
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+}

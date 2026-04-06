@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox alignment="CENTER" spacing="20" prefWidth="400" prefHeight="350" styleClass="app-background" stylesheets="@style.css"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.chatterbox.lan.controllers.LoginController">
+
+    <padding>
+        <Insets top="50" right="50" bottom="50" left="50"/>
+    </padding>
+
+    <Label text="Login"
+           style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+    <VBox spacing="10" maxWidth="250">
+
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="login-input-shell">
+            <FontIcon iconLiteral="fas-user" iconSize="16" styleClass="login-input-icon"/>
+            <TextField fx:id="usernameField" promptText="Username" styleClass="login-input-field"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="login-input-shell">
+            <FontIcon iconLiteral="fas-lock" iconSize="16" styleClass="login-input-icon"/>
+            <PasswordField fx:id="passwordField" onAction="#onLogin" promptText="Password" styleClass="login-input-field"/>
+        </HBox>
+
+        <Button text="Login"
+                fx:id="loginButton"
+                defaultButton="true"
+                onAction="#onLogin"
+                maxWidth="Infinity"
+                styleClass="login-button"/>
+
+        <HBox alignment="CENTER_RIGHT">
+            <Hyperlink text="Create new account"
+                       onAction="#onCreateAccount"
+                       styleClass="create-account-link"/>
+        </HBox>
+
+        <Label fx:id="errorLabel" textFill="red" visible="false"/>
+    </VBox>
+</VBox>
