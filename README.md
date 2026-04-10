@@ -32,16 +32,7 @@ It supports database integration, secure authentication, icons, and webcam featu
 
 ---
 
-## 📂 Project Structure
 
-```bash
-Chatterbox/
-├── src/
-├── pom.xml
-├── mvnw
-├── mvnw.cmd
-└── README.md
-``` 
 
 ## 🚀 Getting Started
 
@@ -51,7 +42,7 @@ Make sure you have the following installed:
 
 - Java JDK 21  
 - Maven (or use Maven Wrapper)  
-- MongoDB (running locally or remotely)  
+- MongoDB  
 
 ---
 
