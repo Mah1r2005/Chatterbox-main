@@ -43,6 +43,41 @@ Chatterbox/
 ├── mvnw
 ├── mvnw.cmd
 └── README.md
+``` 
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+Make sure you have the following installed:
+
+- Java JDK 21  
+- Maven (or use Maven Wrapper)  
+- MongoDB (running locally or remotely)  
+
+---
+
+### ▶️ Run the Application
+
+#### 🔹 Using Maven Wrapper (Recommended)
+
+**Windows**
+```bash
+mvnw.cmd clean javafx:run
+```
+
+**Linux** 
+```bash
+./mvnw clean javafx:run
+```
+
+**Using Installed Maven**
+```bash
+mvn clean javafx:run
+```
+
+
+
 
 
 
