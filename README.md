@@ -22,8 +22,6 @@ It supports database integration, secure authentication, icons, and webcam featu
 
 ---
 
----
-
 ## ⚙️ Tech Stack
 
 - **Java 21**
