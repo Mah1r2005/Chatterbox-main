@@ -1,4 +1,4 @@
-💬 Chatterbox
+💬 Chatterbox \n
 A modern JavaFX-based desktop chat application built with Maven.
 It supports database integration, secure authentication, icons, and webcam features.
 
